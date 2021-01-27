@@ -5,7 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Basic Vue Js - HelloWorld App</title>
-
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+  </style>
   <!-- https://google.github.io/material-design-icons/#icon-font-for-the-web -->
   <!-- Using via Google Web Fonts -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
@@ -20,15 +22,66 @@
 
 </head>
 
-<body>
-  <div id="app" class="h-screen w-full bg-gray-200 flex items-start justify-start">
-    <img src="./images/1.jpg" class="w-1/3 h-full">
-    <div class="w-full flex items-center justify-end">
-      <i class="material-icons">face</i>
-      <p class="font-semibold text-xl tracking-wider uppercase px-3"> {{ msg }}</p>
+<body style="font-family: 'Kanit', sans-serif;">
+
+
+  <div id="body1" class="grid grid-cols-6 p-5"
+    style="background-color:#05773B;color: white; ">
+    <div class="col-start-2 col-span-4">
+      <div class="grid grid-cols-1 justify-items-center">
+        <img class="transform scale-50 md:scale-75 grid grid-rows-1"
+          src="https://www.xn--b3czh8ayeuf.com/images/logo-Thaichana.png" />
+        <p class="" style="font-family: 'Kanit', sans-serif; color: white;font-size: 28px;">
+          เปิดให้ลงทะเบียนร้านค้าตั้งแต่ <b>วันอาทิตย์ที่ 17 พฤษภาคม 2563 เวลา 06.00 น.</b></p>
+      </div>
+      <div class="grid grid-cols-2 pt-10">
+        <button class="rounded-full py-3 w-96 justify-self-center hover:shadow-2xl"
+          style="background-color: orange; font-size: 24px;">ค้นหาร้านค้า</button>
+        <button class="rounded-full py-3 w-96 justify-self-center hover:shadow-2xl"
+          style="background-color: orangered; font-size: 24px;">ลงทะเบียนร้านค้าใหม่</button>
+        <button class="rounded-full py-3 w-96 col-start-2 justify-self-center mt-5 hover:shadow-2xl"
+          style="background-color: cadetblue; font-size: 24px;">จัดการข้อมูลร้านค้า</button>
+      </div>
+      <img class="transform scale-75" src="https://www.xn--b3czh8ayeuf.com/images/bg.png" />
     </div>
   </div>
 
+  <div id="body2" class="grid grid-cols-6" style="color: #2e639d;">
+    <div class="col-start-2 col-span-4">
+      <div class="grid grid-cols-2">
+        <div class="content-center justify-self-center pt-56">
+          <h1 class="row-start-1" style="font-size: 48px; font-weight: bold;">DOWNLOAD</h1>
+          <p class="row-start-2 pb-5" style="font-size: large;">คู่มือสำหรับ
+            ผู้ประกอบการลงทะเบียน
+            และวิธีการสแกน QR</p>
+          <button class="row-start-3 rounded-full py-3 w-48 justify-self-center hover:shadow-2xl"
+            style="background-color: #2e639d; font-size: 24px;color: white;">ค้นหาร้านค้า</button>
+        </div>
+        <img class="transform scale-75" src="https://www.xn--b3czh8ayeuf.com/images/mobile-download-manual.png" />
+      </div>
+    </div>
+  </div>
+
+  <div id="body3" class="grid grid-cols-6 p-5"
+    style="background-color:#05773B;color: white; ">
+    <div class="col-start-2 col-span-4">
+      <div class="grid grid-cols-2">
+        <img class="transform scale-75"src="https://www.xn--b3czh8ayeuf.com/images/img-faq.png"/>
+        <div class="justify-self-center pt-28">
+          <p style="font-size: 40px;font-weight: 700;">คำถามที่พบบ่อย</p>
+          <button class="rounded-full py-3 w-60 col-start-2 justify-self-center mt-5 hover:shadow-2xl"
+          style="background-color: white; font-size: 24px;color: #05773B;font-weight: 600;">ดูคำถามทั้งหมด</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="body4" class="grid grid-cols-6 py-10">
+    <div class="col-start-2 col-span-4">
+      <img class="row-span-full"src="https://www.xn--b3czh8ayeuf.com/images/banner-callcenter.png"/>
+      <p style="text-align: center;" class="pt-8">สงวนสิทธิ์ พ.ศ. 2563 สายด่วนไทยชนะ 1119</p>
+    </div>
+  </div>
   <!-- my main.js -->
   <script src="./main.js"></script>
 </body>

@@ -1,9 +1,17 @@
 const app = {
     data() {
         return {
-            msg: 'Hello, Vue3'
+            msg: 'Hello, Vue3',
+            shown: true,
+            url: 'http://www.sit.kmutt.ac.th'
         }
+    },
+    created(){
+        console.log('messsage is '+ this.msg);
+    },
+    update(){
+        console.log('messsage is changed to'+ this.msg);
     }
 
 }
-Vue.createApp(app).mount('#app')
+var mountedApp = Vue.createApp(app).mount('#app');

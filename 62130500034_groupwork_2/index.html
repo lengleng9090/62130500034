@@ -23,6 +23,11 @@
 <body>
   <div id="app" class="p-8">
     {{msg}}
+    <!-- shown attribute is boolean -->
+    <p v-if="shown" >You can see this message. (v-if)</p>
+    <p v-show="shown" >You can see this message. (v-show)</p>
+    <a v-bind:href="url" class="">Please click here.</a>
+
   </div>
 
   <!-- my main.js -->
